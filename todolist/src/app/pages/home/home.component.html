@@ -5,7 +5,7 @@
         <div class="card-body" *ngFor="let o of obbArray">
           <h2>{{o.todo}}</h2>
           <p *ngIf="getPersonId(o.userId) as utente">Assigned to: {{utente.firstName}}  {{utente.lastName}}</p>
-          <input class="test" type="checkbox">
+          <input class="test" type="checkbox" [(ngModel)]="o.completed">
         </div>
       </div>
     </div>
