@@ -2,8 +2,9 @@
   <div class="row justify-content-center">
     <div class="col-6">
       <div class="card">
-        <div class="card-body">
-          This is some text within a card body.
+        <div class="card-body" *ngFor="let o of obbArray">
+          <h2>{{o.todo}}</h2>
+          <p *ngIf="getPersonId(o.userId) as utente">Assigned to: {{utente.firstName}}  {{utente.lastName}}</p>
           <input class="test" type="checkbox">
         </div>
       </div>
