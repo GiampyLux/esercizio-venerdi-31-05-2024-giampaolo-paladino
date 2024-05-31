@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { CompletatiComponent } from './pages/completati/completati.component';
 import { AutoriComponent } from './pages/autori/autori.component';
 import { FormsModule } from '@angular/forms';
+import { Error404Component } from './componenti/error404/error404.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     CompletatiComponent,
     AutoriComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,

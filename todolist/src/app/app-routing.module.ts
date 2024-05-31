@@ -3,6 +3,7 @@ import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AutoriComponent } from './pages/autori/autori.component';
 import { CompletatiComponent } from './pages/completati/completati.component';
+import { Error404Component } from './componenti/error404/error404.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'completati',
     component: CompletatiComponent
+  },
+  {
+    path: '**',
+    component: Error404Component
   }
 ];
 
